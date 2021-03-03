@@ -1,0 +1,156 @@
+:root/*variáveis*/{
+    --red1: #590202;
+    --red2: #8C030E;
+    --red3: #BF0413;
+    --red4: #F20519;
+    --black: #0D0D0D;
+    --grey: #aaa;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+body{
+    background: var(--black);
+    font-family: 'arial', Times, serif;
+    color: #ffffff;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header .logo {
+    margin-left: 5px;
+    color: var(--red4);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: var(--grey);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: white;
+
+}
+
+/*Filme principal*/
+main .container {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,0.50), rgba(0,0,0,0.50) 100%), url(https://institutodecinema.com.br/public/img/gambitodarainha.png);
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15%;
+    margin-left: 20px;
+}
+
+.recomendados {
+    font-family: 'arial', Times, serif;
+    margin: 10px;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+    border: none;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+
+.botao:hover{
+    background-color: #ffffff;
+    color: #0D0D0D;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.botoes {
+    margin-left: 15px;
+
+}
+
+.carrosel-filmes{
+    margin-top: 10px;
+    position:relative;
+    text-align:center;
+}
+
+.item{
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+.botao1{
+    background-color: rgba(0, 0, 0, 0.30);
+    color: white;
+    border: none;
+    
+    padding: 15px 90px;
+    font-size: 12px;
+
+    position:absolute;
+    top:85%;
+    left:50%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+
+}
+
+.botao2{
+    background-color: rgba(0, 0, 0, 0.50);
+    color: white;
+    border: none;
+
+    padding: 15px 30px;
+    font-size: 12px;
+
+}
+
+.name{ 
+    margin: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color:#ffffff;
+}
